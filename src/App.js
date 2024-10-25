@@ -2,19 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import cart from './assets/cart.png';
 
+import './App.css';
+
 function App() {
   const shareLink = async () => {
-    if (navigator.share) {
-      // Create a Blob from the imported image
-      const response = await fetch(cart);
-      const blob = await response.blob();
+   // Replace with the actual URL of your hosted image
+    const mainUrl = 'https://example.com'; // Replace with your main URL
 
+    if (navigator.share) {
       try {
         await navigator.share({
           title: 'Check this out!',
-          text: 'List Name',
-          url: 'https://example.com', // Replace with your URL
-          files: [new File([blob], 'cart.png', { type: blob.type })]
+          text: 'Check out this image and link!',
+          url: mainUrl, // Share the main URL
+          files: [new File([await fetch(cart).then(res => res.blob())], 'cart.png', { type: 'image/png' })] // For supported browsers
         });
 
         console.log('Share successful');
