@@ -46,6 +46,8 @@
             Share
           </button>
         </div>
+
+        <input id="cardNumber"  inputMode="numeric"  ></input>
       </>
     );
   }
