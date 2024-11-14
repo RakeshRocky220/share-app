@@ -46,8 +46,19 @@
             Share
           </button>
         </div>
+  <div className='mt-5'>
+      <div className='form-group'>
+        <label>Card Holder Name</label>
+        <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display QWERTY key-pad' type='text'></input>
+      </div>
+      <div className='form-group'>
+        <label>Card Number</label>
+        <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display Dail-Pad' type='number' inputMode='numeric'></input>
+      </div>
+  </div>
 
-        <input id="cardNumber"></input>
+
+     
       </>
     );
   }
