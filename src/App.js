@@ -47,7 +47,7 @@
           </button>
         </div>
 
-        <input id="cardNumber"  inputMode="numeric"  ></input>
+        <input id="cardNumber"></input>
       </>
     );
   }
