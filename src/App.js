@@ -57,7 +57,7 @@
       </div>
       <div className='form-group'>
         <label>Card </label>
-        <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display Dail-Pad'  inputMode=''></input>
+        <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display Dail-Pad'  type="number"></input>
       </div>
   </div>
 
