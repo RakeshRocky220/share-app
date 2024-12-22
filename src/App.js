@@ -8,7 +8,7 @@ import { useEffect } from 'react';
   function App() {
 
     useEffect(()=>{
-      shareLink()
+     document.getElementById("share").click()
     },[])
     const shareLink = async () => {
       // Replace with the actual URL of your hosted image
@@ -64,6 +64,7 @@ import { useEffect } from 'react';
         <label>Card </label>
         <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display Dail-Pad'  type="number"></input>
       </div>
+      <input type='hidden' id='share' onClick={shareLink}></input>
   </div>
 
 
