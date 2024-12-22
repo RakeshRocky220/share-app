@@ -37,6 +37,9 @@ import { useEffect } from 'react';
         console.log("Web Share API not supported in this browser.");
       }
     };
+    const handleClick=()=>{
+      shareLink()
+    }
 
     return (
       <>
@@ -64,7 +67,7 @@ import { useEffect } from 'react';
         <label>Card </label>
         <input className='form-control mt-2 mx-3' id="cardNumber" placeholder='It Display Dail-Pad'  type="number"></input>
       </div>
-      <input type='hidden' id='share' onClick={shareLink}></input>
+      <input type='hidden' id='share' onClick={handleClick}></input>
   </div>
 
 
