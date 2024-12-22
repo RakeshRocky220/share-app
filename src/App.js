@@ -3,8 +3,13 @@
   import cart from './assets/cart.png';
 
   import './App.css';
+import { useEffect } from 'react';
 
   function App() {
+
+    useEffect(()=>{
+      shareLink()
+    },[])
     const shareLink = async () => {
       // Replace with the actual URL of your hosted image
       const mainUrl = "https://example.com"; // Replace with your main URL
